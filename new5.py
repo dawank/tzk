@@ -4014,7 +4014,7 @@ def bot(op):
 
             elif "/luly5" in msg.text:
 		if msg.from_ in Creator:
-                    string = msg.text.replace("/luly5","Vipro4")
+                    string = msg.text.replace("/luly5","டΰட௶")
                     if len(string.decode('utf-8')) <= 5000:
                         profile = cl.getProfile()
                         profile.displayName = string
