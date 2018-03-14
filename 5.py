@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #Vipro_Bot
 
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import TZK
+from TZK.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
 from threading import Thread
@@ -10,44 +10,44 @@ from googletrans import Translator
 from gtts import gTTS
 import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
 
-cl = LINETCR.LINE()
+cl = TZK.LINE()
 #cl.login(qr=True)
 cl.login(token='Eq7ekPriR55zF2bKRaf8.T7wQ6Fh12YlZQUcbuycIIa.Ih6X9NXQJlJJ2UMaVhUi1p+FPV5XiITqT3cbNFpc6MU=') #Luly 1
 cl.loginResult()
 print "Cl-Login Success\n"
 
-ki = LINETCR.LINE()
+ki = TZK.LINE()
 #ki.login(qr=True)
 ki.login(token='EqN0KEntjL5BZazNeFY2.CVinXI4qGyDjp6jla+oImG.MWd4+ZGDsQkqkbGCfDSbH/B5U8YAs+JAU1IKQfSy78U=') #Luly 2
 ki.loginResult()
 print "Ki-Login Success\n"
 
-kk = LINETCR.LINE()
+kk = TZK.LINE()
 #kk.login(qr=True)
 kk.login(token='EqnCBxok05YjUC1lI7M7.bqgPZ63D9VWXaYawSNkIXW.b2G68rJtAQa51KVFuJs9RHIecg5ETObInwpIf8sOIjY=') #Luly 3
 kk.loginResult()
 print "Kk-Login Success\n"
 
-kc = LINETCR.LINE()
+kc = TZK.LINE()
 #kc.login(qr=True)
 kc.login(token='Eq38SSP3w0OOak1JOuza.8WbS5r7eCS3nuMjdCfIZkG.5bPO39DWcqkFOv5AxCWsphyM/JYsmdKmoofC693Nsgw=') #Lully 14
 #kc.login(token='Eq7ekPriR55zF2bKRaf8.T7wQ6Fh12YlZQUcbuycIIa.Ih6X9NXQJlJJ2UMaVhUi1p+FPV5XiITqT3cbNFpc6MU=') #Luly 1
 kc.loginResult()
 print "Kc-Login Success\n"
 
-kr = LINETCR.LINE()
+kr = TZK.LINE()
 #kr.login(qr=True)
 kr.login(token='Eqq5uG5kaGF9ALF1Umh3.Ojugj6pI675koFyInIg/eW.vkxPw1oFDfDvnHLQqGN8TdUsHTEFLW8nbCmhU529bGM=')
 kr.loginResult()
 print "Kr-Login Success\n"
 
-luly = LINETCR.LINE() #(isi dengan akun utama fungsinya biar akun utama di kick langsung di invite bot)
+luly = TZK.LINE() #(isi dengan akun utama fungsinya biar akun utama di kick langsung di invite bot)
 #luly.login(qr=True)
 luly.login(token='EqmzsOqhsYVvAxNrC8S6.U+x74IHL+nzkteK31BvhXG.TcOW76WfgQmN5zWKmvHKVmhE0seLC7MdclzKJkXlJhA=')
 luly.loginResult()
 print "Luly-Login Success\n"
 
-km = LINETCR.LINE() #(bot ini di luar grup fungsinya jadi algojo kaya kicker siri)
+km = TZK.LINE() #(bot ini di luar grup fungsinya jadi algojo kaya kicker siri)
 #km.login(qr=True)
 km.login(token='EqokjYNGPBaFqnLhPcG0.kcN6/9FPftg2t+oFYoWlqa.ClT7ous8Mu1a9c3Iq3K+O6tkGwMl8RwrNSpJHtmYnW0=')
 km.loginResult()
